@@ -21,7 +21,7 @@
     "mpris",
     // "custom/separator#dot-line",
     "clock",
-    "hyprland/workspaces#numbers",
+    "ext/workspaces#numbers",
     // "custom/separator#dot-line",
     "network",
     "pulseaudio",

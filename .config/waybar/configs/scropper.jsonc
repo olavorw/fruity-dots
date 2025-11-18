@@ -21,11 +21,11 @@
     "clock",
     // "custom/separator#blank",
     "tray",
-    "hyprland/workspaces#rwa",
+    "ext/workspaces#rwa",
   ],
   "modules-center": [
     "group/arch_drawer",
-    "hyprland/window#title",
+    "dwl/window#title",
     // "custom/separator#dot-line",
     // "custom/separator#dot-line",
     "custom/swaync"

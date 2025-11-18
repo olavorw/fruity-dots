@@ -20,7 +20,7 @@
     "clock",
     "custom/separator#blank",
     "tray",
-    "hyprland/workspaces#numbers",
+    "ext/workspaces#numbers",
   ],
   "modules-center": [
     "group/app_drawer",

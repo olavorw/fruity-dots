@@ -26,7 +26,7 @@
   "modules-center": [
     "group/arch_drawer",
     // "custom/separator#dot-line",
-    "hyprland/workspaces#numbers",
+    "ext/workspaces#numbers",
     // "custom/separator#dot-line",
     "custom/swaync"
   ],

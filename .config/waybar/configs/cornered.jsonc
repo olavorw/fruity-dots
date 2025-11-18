@@ -21,7 +21,7 @@
     "group/arch_drawer",
     "clock",
     // "custom/separator#blank",
-    "hyprland/workspaces#numbers",
+    "ext/workspaces#numbers",
   ],
   "modules-center": [
     // "custom/separator#dot-line",

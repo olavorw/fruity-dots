@@ -26,10 +26,14 @@ output_path = '~/.config/swaync/colors/matugen.css'
 pre_hook = 'killall -9 swaync'
 post_hook = 'swaync &'
 
-[templates.hyprland]
-input_path = './templates/hyprland-colors.conf'
-output_path = '~/.config/hypr/colors/custom/matugen.conf'
-post_hook = 'hyprctl reload & hyprshade auto'
+[templates.mango]
+input_path = './templates/mango.conf'
+output_path = '~/.config/mango/matugen.conf'
+post_hook = 'mmsg -d reload_config'
+
+[templates.hyprlock]
+input_path = './templates/hyprlock.conf'
+output_path = '~/.config/hypr/hyprlock.conf'
 
 [templates.kitty]
 input_path = './templates/kitty-colors.conf'
