@@ -17,8 +17,6 @@ echo "Copying dotfiles over using updater.sh in the root directory of these dots
 ../updater.sh
 
 # Install hyprland plugins
-echo "Setting up hyprpm (hyprland plugins)"
-./hyprplugins.sh
 
 # font uwu
 echo "Installing fonts"
