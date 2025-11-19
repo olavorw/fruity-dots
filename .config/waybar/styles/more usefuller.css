@@ -44,7 +44,7 @@ tooltip label { color: @inverse_surface; }
 .modules-center,
 .modules-right {
     background-color: @background_surface;
-    border-radius: 20px;
+    border-radius: 6px;
     margin: 8px 8px 0 6px;
     padding: 8 15px;
     color: @primary;          /* choose between primary / primary_fixed */
@@ -58,7 +58,7 @@ tooltip label { color: @inverse_surface; }
     background-color: @primary;
     padding: 0 20px;
     margin: 0 10px;
-    border-radius: 20px;
+    border-radius: 6px;
     transition:
         all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
 }
@@ -68,7 +68,7 @@ tooltip label { color: @inverse_surface; }
 ---------------------------------------------------------- */
 #workspaces {
     background-color: alpha(@secondary, 0.1);
-    border-radius: 20px;
+    border-radius: 6px;
     /* padding: 0 0; */
     margin: 0 0 0 10px;
 }
@@ -81,7 +81,7 @@ tooltip label { color: @inverse_surface; }
     box-shadow: none;                     /* remove default styling */
     text-shadow: none;
     padding: 1px 7px 0 7px;
-    border-radius: 20px;
+    border-radius: 6px;
     animation: gradient_f 20s ease-in infinite;
     transition:
         all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.682);
@@ -91,7 +91,7 @@ tooltip label { color: @inverse_surface; }
     color: @surface;
     font-weight: 900;
     background-color: @secondary;
-    border-radius: 20px;
+    border-radius: 6px;
     transition:
         all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
 }
@@ -100,7 +100,7 @@ tooltip label { color: @inverse_surface; }
     color: @surface;
     font-weight: 900;
     background-color: @primary;
-    border-radius: 20px;
+    border-radius: 6px;
     transition:
         all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
 }

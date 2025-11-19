@@ -43,7 +43,7 @@ tooltip label { color: @inverse_surface; }
 .modules-left,
 .modules-right {
     background-color: transparent;
-    border-radius: 20px;
+    border-radius: 6px;
     margin: 8px 8px 0 6px;
     /* padding: 8 15px; */
     color: @primary;          /* choose between primary / primary_fixed */
@@ -51,7 +51,7 @@ tooltip label { color: @inverse_surface; }
 
 .modules-center {
     background-color: @background_surface;
-    border-radius: 20px;
+    border-radius: 6px;
     margin: 8px 8px 0 6px;
     color: @primary;          /* choose between primary / primary_fixed */
 }
@@ -64,7 +64,7 @@ tooltip label { color: @inverse_surface; }
     background-color: alpha(@secondary_fixed, 0.065);
     padding: 0 13;
     margin: 5px 0;
-    border-radius: 20px;
+    border-radius: 6px;
     transition:
         all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
 }
@@ -74,7 +74,7 @@ tooltip label { color: @inverse_surface; }
 ---------------------------------------------------------- */
 #workspaces {
     background-color: alpha(@background_surface, 1);
-    border-radius: 20px;
+    border-radius: 6px;
     /* padding: 0 0; */
     margin: 0 0 0 10px;
 }
@@ -87,7 +87,7 @@ tooltip label { color: @inverse_surface; }
     box-shadow: none;                     /* remove default styling */
     text-shadow: none;
     padding: 6.5px 13px 6.5px 13px;
-    border-radius: 20px;
+    border-radius: 6px;
     animation: gradient_f 20s ease-in infinite;
     transition:
         all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.682);
@@ -106,7 +106,7 @@ tooltip label { color: @inverse_surface; }
     color: @surface;
     font-weight: 900;
     background-color: @primary;
-    border-radius: 20px;
+    border-radius: 6px;
     transition:
         all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
 }
@@ -114,7 +114,7 @@ tooltip label { color: @inverse_surface; }
     background-color: @error;
     color: @surface;
 }
-#workspaces button.persistent { border-radius: 20px; }
+#workspaces button.persistent { border-radius: 6px; }
 
 /* ----------------------------------------------------------
    5c. MPRIS REGIONAL SELECTOR
@@ -124,7 +124,7 @@ tooltip label { color: @inverse_surface; }
   color: @surface;
   background-color: @primary;
   margin: 0 10px 0 0;
-  border-radius: 20px;
+  border-radius: 6px;
   padding: 0 15px;
 }
 
@@ -192,7 +192,7 @@ tooltip label { color: @inverse_surface; }
 #custom-updater,
 #custom-swaync,
 #custom-launcher {
-    border-radius: 20px;
+    border-radius: 6px;
     padding: 0 15px;
     /* background-color: @background_surface; */
 }
@@ -210,14 +210,14 @@ tooltip label { color: @inverse_surface; }
 }
 
 #network {
-    border-radius: 20px 0 0 20px;
+    border-radius: 6px 0 0 20px;
     padding: 0 15px;
     background-color: @background_surface;   
 }
 
 #clock {
     padding: 8 15px;
-    border-radius: 20px 0 0 20px;
+    border-radius: 6px 0 0 20px;
     background-color: @background_surface;
 }
 

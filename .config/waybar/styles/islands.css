@@ -44,7 +44,7 @@ tooltip label {
 
 #workspaces {
   background-color: @background_surface;
-  border-radius: 20px;
+  border-radius: 6px;
   padding: 8px 10px;
   margin: 0 4px;
 }
@@ -57,7 +57,7 @@ tooltip label {
   text-shadow: none;
   margin: 0px 3px;
   padding: 1px 7px 0px 7px;
-  border-radius: 20px;
+  border-radius: 6px;
   animation: gradient_f 20s ease-in infinite;
   transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.682);
 }
@@ -155,7 +155,7 @@ tooltip label {
 #window,
 #wireplumber {
   background-color: @background_surface;
-  border-radius: 20px;
+  border-radius: 6px;
   padding: 8px 15px;
   margin: 0 0 0 4px;
 }
@@ -176,7 +176,7 @@ tooltip label {
 /* ===== MODULE-SPECIFIC OVERRIDES ===== */
 #clock {
 background-color: @background_surface;
-  border-radius: 20px;
+  border-radius: 6px;
   padding: 8px 15px;
 }
 

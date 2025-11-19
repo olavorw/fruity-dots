@@ -14,8 +14,8 @@
   "fixed-center": true,
   "ipc": true,
   "margin-top": 3,
-  "margin-left": 8,
-  "margin-right": 8,
+  "margin-left": 5,
+  "margin-right": 5,
   "reload_style_on_change": true,
   "modules-left": [
     "clock",

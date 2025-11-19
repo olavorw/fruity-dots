@@ -41,12 +41,18 @@ tooltip label { color: @inverse_surface; }
    4. MODULE GROUPS (LEFT / CENTER / RIGHT)
 ---------------------------------------------------------- */
 .modules-left,
-.modules-center,
 .modules-right {
+    background-color: transparent;
+    border-radius: 6px;
+    margin: 8px 8px 0 6px;
+    /* padding: 8 15px; */
+    color: @primary;          /* choose between primary / primary_fixed */
+}
+
+.modules-center {
     background-color: @background_surface;
     border-radius: 6px;
     margin: 8px 8px 0 6px;
-    padding: 5px 15px;
     color: @primary;          /* choose between primary / primary_fixed */
 }
 
@@ -54,11 +60,11 @@ tooltip label { color: @inverse_surface; }
    5a. WINDOW
 ---------------------------------------------------------- */
 #window {
-    color: @surface;
-    background-color: @primary;
-    padding: 0 20px;
-    margin: 0 10px;
-    border-radius: 6px;
+    color: @primary;
+    background-color: alpha(@secondary_fixed, 0.065);
+    padding: 0 13;
+    margin: 5px 0;
+    border-radius: 20px;
     transition:
         all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
 }
@@ -67,31 +73,31 @@ tooltip label { color: @inverse_surface; }
    5b. WORKSPACE & TASKBAR BUTTONS
 ---------------------------------------------------------- */
 #workspaces {
-    background-color: alpha(@secondary, 0.1);
-    border-radius: 6px;
+    background-color: alpha(@background_surface, 1);
+    border-radius: 20px;
     /* padding: 0 0; */
     margin: 0 0 0 10px;
 }
 
 #taskbar button,
 #workspaces button {
-    margin: 0 3px;
-    background-color: alpha(@secondary, 0.0);
-    color: alpha(@on_primary_container, 0.6);          /* invisible text until hover */
+    /* margin: 0 3px; */
+    /* background-color: alpha(@secondary, 0.1); */
+    color: alpha(@secondary, 0.5);          /* invisible text until hover */
     box-shadow: none;                     /* remove default styling */
     text-shadow: none;
-    padding: 1px 7px 0 7px;
-    border-radius: 6px;
+    padding: 6.5px 13px 6.5px 13px;
+    border-radius: 20px;
     animation: gradient_f 20s ease-in infinite;
     transition:
         all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.682);
 }
 #taskbar button:hover,
 #workspaces button:hover {
-    color: @surface;
     font-weight: 900;
-    background-color: @secondary;
-    border-radius: 6px;
+    background-color: alpha(@secondary, 0.1);
+    border-radius: 50px;
+    padding: 6.5px 13px 6.5px 13px;
     transition:
         all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
 }
@@ -100,17 +106,31 @@ tooltip label { color: @inverse_surface; }
     color: @surface;
     font-weight: 900;
     background-color: @primary;
-    border-radius: 6px;
+    border-radius: 20px;
     transition:
         all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
 }
 #workspaces button.urgent {
     background-color: @error;
     color: @surface;
-    border-radius: 10px;
 }
-#workspaces button.persistent { border-radius: 10px; }
+#workspaces button.persistent { border-radius: 6px; }
 
+/* ----------------------------------------------------------
+   5c. MPRIS REGIONAL SELECTOR
+---------------------------------------------------------- */
+
+#mpris {
+  color: @surface;
+  background-color: @primary;
+  margin: 0 10px 0 0;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+
+#custom-cava_mviz {
+  margin: 0 0 0 15px;
+}
 
 /* ----------------------------------------------------------
    6. INDIVIDUAL MODULE SELECTORS
@@ -123,16 +143,13 @@ tooltip label { color: @inverse_surface; }
 #custom-acrylicctl,
 #custom-backlight,
 #custom-browser,
-#custom-cava_mviz,
 #custom-cycle_wall,
 #custom-dot_update,
 #custom-file_manager,
 #custom-hint,
-#custom-hypridle,
 #custom-keybinds,
 #custom-keyboard,
 #custom-media,
-#custom-hyprmenu,
 #custom-playerctl,
 #custom-power,
 #custom-power_vertical,
@@ -141,9 +158,7 @@ tooltip label { color: @inverse_surface; }
 #custom-settings,
 #custom-spotify,
 #custom-tty,
-#custom-updater,
 #custom-protonvpn,
-#custom-waybar,
 #custom-weather,
 #custom-weather.clearNight,
 #custom-weather.cloudyFoggyDay,
@@ -155,39 +170,57 @@ tooltip label { color: @inverse_surface; }
 #custom-weather.showyIcyDay,
 #custom-weather.snowyIcyNight,
 #custom-weather.sunnyDay,
-#custom-yubilock,
+/* #custom-yubilock, */
 #disk,
 #idle_inhibitor,
 #keyboard-state,
 #memory,
 #mode,
-#mpris,
 #power-profiles-daemon,
 #privacy,
-#pulseaudio,
 #pulseaudio-slider,
 #taskbar,
 #temperature,
-#tray,
-#window,
 #wireplumber {
-    background-color: alpha(@secondary, 0.1);
+    padding: 0 15px 0 0px;
+    background-color: @background_surface;
+}
+
+#custom-hyprmenu,
+#custom-waybar,
+#custom-hypridle,
+#custom-updater,
+#custom-swaync,
+#custom-launcher {
     border-radius: 6px;
-    padding: 0 10px;
-    margin: 0 0 0 10px;
+    padding: 0 15px;
+    /* background-color: @background_surface; */
 }
 
-#window {
-    color: @primary;
-    margin: 0 10px 0 10px;
+#tray {
+    padding: 0 15px 0 0;
+    background-color: @background_surface;
+    border-radius: 0 6px 6px 0;
 }
 
-#network,
+#pulseaudio {
+    border-radius: 0 6px 6px 0;
+    padding: 0 15px 0 0;
+    background-color: @background_surface;   
+}
+
+#network {
+    border-radius: 6px 0 0 6px;
+    padding: 0 15px;
+    background-color: @background_surface;   
+}
+
 #clock {
-    background-color: alpha(@secondary, 0.1);
-    border-radius: 6px;
-    padding: 0 10px;
+    padding: 8 15px;
+    border-radius: 6px 0 0 6px;
+    background-color: @background_surface;
 }
+
 
 /* ----------------------------------------------------------
    7. SEPARATORS

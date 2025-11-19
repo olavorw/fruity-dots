@@ -18,7 +18,7 @@ window#waybar.empty,
 window#waybar.empty #window {
   background-color: @background_surface;
   border: 2px;
-  border-radius: 20px;
+  border-radius: 6px;
 
 }
 
@@ -38,7 +38,7 @@ tooltip label {
 .modules-center,
 .modules-right {
     background-color: transparent;
-  border-radius: 20px;
+  border-radius: 6px;
   padding: 0px 15px;
   color: @primary; /* Can't decide between primary and primary_fixed*/
   /* padding: 10px 10px 2px; */
@@ -47,7 +47,7 @@ tooltip label {
 /* ===== WORKSPACE & TASKBAR BUTTONS ===== */
 
 #workspaces {
-  border-radius: 20px;
+  border-radius: 6px;
   padding: 8px 10px;
   margin: 0 4px;
 }
@@ -60,7 +60,7 @@ tooltip label {
   text-shadow: none;
   margin: 0px 3px;
   padding: 1px 7px 0px 7px;
-  border-radius: 20px;
+  border-radius: 6px;
   animation: gradient_f 20s ease-in infinite;
   transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.682);
 }
