@@ -13,7 +13,7 @@ PKGS+=(
   grim  # screenshot tool
   chafa # ascii art renderer (for splash screens)
   jq    # JSON processor
-
+  gnome-keyring
   polkit-gnome # policy‑kit GUI for privileged actions
   swaync       # notification daemon
   # TODO: swayosd           # Sway on-screen display (shows volume adjustments, etc.) See https://github.com/ErikReider/SwayOSD
@@ -130,6 +130,8 @@ PKGS+=(
   udiskie        # auto-mount removable media
   tree           # directory tree viewer
   wl-clipboard   # clipboard integration
+  wl-clip-persist
+  cliphist
 
   spotify
   spicetify-cli

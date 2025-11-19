@@ -28,6 +28,9 @@ swaync &
 # Top bar
 waybar &
 
+# Night light
+wlsunset -T 3501 -t 3500 &
+
 # Idle management (hypridle)
 hypridle &
 
@@ -35,8 +38,15 @@ hypridle &
 protonvpn-app --start-minimized &
 
 # Clipboard history (text and images)
+# Option 1:
+# wl-paste --type text --watch cliphist store &
+# wl-paste --type image --watch cliphist store &
+# Option 2:
+# keep clipboard content
+wl-clip-persist --clipboard regular --reconnect-tries 0 &
+
+# clipboard content manager
 wl-paste --type text --watch cliphist store &
-wl-paste --type image --watch cliphist store &
 
 # For screenshare to work
 dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=wlroots
