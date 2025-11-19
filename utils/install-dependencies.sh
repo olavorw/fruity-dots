@@ -6,12 +6,13 @@
 PKGS+=(
   mango
   wlsunset
-  hyprlock # lock screen
-  hypridle # idle manager
-  foot     # terminal emulator
-  grim     # screenshot tool
-  chafa    # ascii art renderer (for splash screens)
-  jq       # JSON processor
+  swaylock
+  swayosd
+  hypridle
+  foot  # terminal emulator
+  grim  # screenshot tool
+  chafa # ascii art renderer (for splash screens)
+  jq    # JSON processor
 
   polkit-gnome # policy‑kit GUI for privileged actions
   swaync       # notification daemon
