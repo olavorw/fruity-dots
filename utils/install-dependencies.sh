@@ -4,7 +4,7 @@
 # 1. Hypr / Mango / Wayland / Window‑manager essentials
 # -------------------------------------------------------------
 PKGS+=(
-  mango
+  mangowc-git
   wlsunset
   swaylock
   swayosd
