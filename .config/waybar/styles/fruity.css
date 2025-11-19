@@ -98,6 +98,10 @@ tooltip label { color: @inverse_surface; }
 #tags button.occupied {
   color: alpha(@secondary, 0.5);
 }
+#tags button.overview {
+  background-color: transparent;
+  color: alpha(@secondary, 0.75);
+}
 #taskbar button:hover,
 #tags button:hover {
     font-weight: 900;
