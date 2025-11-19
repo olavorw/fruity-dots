@@ -72,7 +72,7 @@ tooltip label { color: @inverse_surface; }
 /* ----------------------------------------------------------
    5b. WORKSPACE & TASKBAR BUTTONS
 ---------------------------------------------------------- */
-#workspaces {
+#tags {
     background-color: alpha(@background_surface, 1);
     border-radius: 6px;
     /* padding: 0 0; */
@@ -80,7 +80,7 @@ tooltip label { color: @inverse_surface; }
 }
 
 #taskbar button,
-#workspaces button {
+#tags button {
     /* margin: 0 3px; */
     /* background-color: alpha(@secondary, 0.1); */
     color: alpha(@secondary, 0.5);          /* invisible text until hover */
@@ -93,7 +93,7 @@ tooltip label { color: @inverse_surface; }
         all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.682);
 }
 #taskbar button:hover,
-#workspaces button:hover {
+#tags button:hover {
     font-weight: 900;
     background-color: alpha(@secondary, 0.1);
     border-radius: 50px;
@@ -102,7 +102,7 @@ tooltip label { color: @inverse_surface; }
         all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
 }
 #taskbar button.active,
-#workspaces button.active {
+#tags button.active {
     color: @surface;
     font-weight: 900;
     background-color: @primary;
@@ -110,11 +110,11 @@ tooltip label { color: @inverse_surface; }
     transition:
         all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
 }
-#workspaces button.urgent {
+#tags button.urgent {
     background-color: @error;
     color: @surface;
 }
-#workspaces button.persistent { border-radius: 6px; }
+#tags button.persistent { border-radius: 6px; }
 
 /* ----------------------------------------------------------
    5c. MPRIS REGIONAL SELECTOR

@@ -21,11 +21,11 @@
     "clock",
     // "custom/separator#blank",
     "tray",
-    "ext/workspaces#rwa",
+    "dwl/tags",
   ],
   "modules-center": [
     "group/arch_drawer",
-    "dwl/window#title",
+    "dwl/window",
     // "custom/separator#dot-line",
     // "custom/separator#dot-line",
     "custom/swaync"

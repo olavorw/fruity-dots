@@ -42,7 +42,7 @@ tooltip label {
 
 /* ===== WORKSPACE & TASKBAR BUTTONS ===== */
 
-#workspaces {
+#tags {
   background-color: @background_surface;
   border-radius: 6px;
   padding: 8px 10px;
@@ -50,7 +50,7 @@ tooltip label {
 }
 
 #taskbar button,
-#workspaces button {
+#tags button {
   background-color: @on_secondary;
   color: @on_secondary;
   box-shadow: none;
@@ -63,7 +63,7 @@ tooltip label {
 }
 
 #taskbar button:hover,
-#workspaces button:hover {
+#tags button:hover {
   color: @surface;
   font-weight: 900;
   background-color: @secondary;
@@ -74,7 +74,7 @@ tooltip label {
 }
 
 #taskbar button.active,
-#workspaces button.active {
+#tags button.active {
   color: @surface;
   font-weight: 900;
   background-color: @primary;
@@ -84,13 +84,13 @@ tooltip label {
   transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
 }
 
-#workspaces button.urgent {
+#tags button.urgent {
   background-color: @error;
   color: @surface;
   border-radius: 10px;
 }
 
-#workspaces button.persistent {
+#tags button.persistent {
   border-radius: 10px;
 }
 

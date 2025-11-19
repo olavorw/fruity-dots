@@ -53,14 +53,14 @@ tooltip label { color: @inverse_surface; }
 /* ----------------------------------------------------------
    5. WORKSPACE & TASKBAR BUTTONS
 ---------------------------------------------------------- */
-#workspaces {
+#tags {
     border-radius: 6px;
     padding: 8px 10px;
     margin: 0 4px;
 }
 
 #taskbar button,
-#workspaces button {
+#tags button {
     background-color: alpha(@secondary, 0.1);
     color: alpha(@secondary, 0);          /* invisible text until hover */
     box-shadow: none;                     /* remove default styling */
@@ -73,7 +73,7 @@ tooltip label { color: @inverse_surface; }
         all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.682);
 }
 #taskbar button:hover,
-#workspaces button:hover {
+#tags button:hover {
     color: @surface;
     font-weight: 900;
     background-color: @secondary;
@@ -83,7 +83,7 @@ tooltip label { color: @inverse_surface; }
         all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
 }
 #taskbar button.active,
-#workspaces button.active {
+#tags button.active {
     color: @surface;
     font-weight: 900;
     background-color: @primary;
@@ -92,12 +92,12 @@ tooltip label { color: @inverse_surface; }
     transition:
         all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
 }
-#workspaces button.urgent {
+#tags button.urgent {
     background-color: @error;
     color: @surface;
     border-radius: 10px;
 }
-#workspaces button.persistent { border-radius: 10px; }
+#tags button.persistent { border-radius: 10px; }
 
 /* ----------------------------------------------------------
    6. INDIVIDUAL MODULE SELECTORS

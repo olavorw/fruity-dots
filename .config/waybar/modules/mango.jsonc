@@ -1,0 +1,9 @@
+{
+  "dwl/tags": {
+    // "num-tags": 9,
+    "hide-vacant": "true"
+  },
+  "dwl/window": {
+    "tooltip": false
+  }
+}
