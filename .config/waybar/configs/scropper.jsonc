@@ -6,7 +6,7 @@
     "$HOME/.config/waybar/modules/groups.jsonc",
     "$HOME/.config/waybar/modules/custom-modules.jsonc"
   ],
-  "layer": "bottom",
+  "layer": "top",
   "exclusive": true,
   "passthrough": false,
   "position": "top",
