@@ -38,6 +38,11 @@ protonvpn-app --start-minimized &
 wl-paste --type text --watch cliphist store &
 wl-paste --type image --watch cliphist store &
 
+# For screenshare to work
+dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=wlroots
+# The next line of command is not necessary. It is only to avoid some situations where it cannot start automatically
+/usr/lib/xdg-desktop-portal-wlr &
+
 # Execs are also a thing BUT,
 # https://github.com/DreamMaoMao/mangowc/wiki#exec-setting
 
