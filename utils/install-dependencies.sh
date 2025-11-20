@@ -19,6 +19,7 @@ PKGS+=(
   # TODO: swayosd           # Sway on-screen display (shows volume adjustments, etc.) See https://github.com/ErikReider/SwayOSD
   waybar # status bar / widget area
   xdg-desktop-portal-wlr
+  wlsunset
 )
 
 # -------------------------------------------------------------
