@@ -30,6 +30,7 @@ waybar &
 
 # Night light
 wlsunset -T 3501 -t 3500 &
+-S 5:30 -s 19:00
 
 # Idle management (hypridle)
 hypridle &
