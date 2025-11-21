@@ -36,6 +36,12 @@ for item in $DOTFILES_DIR/*; do
     continue
   fi
 
+  if [ "$BASENAME" = "README.md" ]; then
+    echo "[SKIP] $BASENAME (git directory)"
+    ((SKIPPED++))
+    continue
+  fi
+
   if [ "$BASENAME" = "utils" ]; then
     echo "[SKIP] $BASENAME (utils directory)"
     ((SKIPPED++))
