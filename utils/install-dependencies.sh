@@ -20,6 +20,7 @@ PKGS+=(
   waybar # status bar / widget area
   xdg-desktop-portal-wlr
   wlsunset
+  maple-mono-nf-cn
 )
 
 # -------------------------------------------------------------
