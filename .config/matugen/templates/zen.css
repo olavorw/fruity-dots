@@ -11,3 +11,9 @@
   --zen-primary-color: var(--primary) !important;
 }
 
+
+/*
+ * To use this, go to the desired zen profile, then in a folder called 'chrome' and in a file called
+ * 'userChrome.css,' paste the following:
+ * @import '../../.shared/matugen.css';
+*/
