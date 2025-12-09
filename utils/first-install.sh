@@ -18,6 +18,8 @@ echo "Copying dotfiles over using updater.sh in the root directory of these dots
 
 # Install hyprland plugins
 
+sudo systemctl enable pcscd
+
 # font uwu
 echo "Installing fonts"
 ./install-sf-pro-fonts.sh
