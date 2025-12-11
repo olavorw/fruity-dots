@@ -14,6 +14,15 @@ echo ""
 echo "Installing dotfiles..."
 echo ""
 
+# Colors
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[0;33m'
+BLUE='\033[0;34m'
+MAGENTA='\033[0;35m'
+CYAN='\033[0;36m'
+NC='\033[0m'
+
 SKIPPED=0
 COPIED=0
 
@@ -24,36 +33,36 @@ for item in $DOTFILES_DIR/*; do
 
   # Skip the install script itself
   if [ "$BASENAME" = "$(basename "$0")" ]; then
-    echo "[SKIP] $BASENAME (install script)"
+    echo "${YELLOW}[SKIP] $BASENAME (install script)${NC}"
     ((SKIPPED++))
     continue
   fi
 
   # Skip .git directory
   if [ "$BASENAME" = ".git" ]; then
-    echo "[SKIP] $BASENAME (git directory)"
+    echo "${YELLOW}[SKIP] $BASENAME (git directory)${NC}"
     ((SKIPPED++))
     continue
   fi
 
   if [ "$BASENAME" = "README.md" ]; then
-    echo "[SKIP] $BASENAME (git directory)"
+    echo "${YELLOW}[SKIP] $BASENAME (git directory)${NC}"
     ((SKIPPED++))
     continue
   fi
 
   if [ "$BASENAME" = "utils" ]; then
-    echo "[SKIP] $BASENAME (utils directory)"
+    echo "${YELLOW}[SKIP] $BASENAME (utils directory)${NC}"
     ((SKIPPED++))
     continue
   fi
 
   # Copy item to home directory
-  echo "[COPY] $BASENAME"
+  echo "${BLUE}[COPY] $BASENAME${NC}"
   if cp -rv "$item" "$HOME/" 2>&1 | sed 's/^/       /'; then
     ((COPIED++))
   else
-    echo "       ERROR: Failed to copy $BASENAME"
+    echo "${RED}       ERROR: Failed to copy $BASENAME${NC}"
   fi
   echo ""
 done
