@@ -54,13 +54,13 @@ dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 /usr/lib/xdg-desktop-portal-wlr &
 
 # Scaling
-echo "Xft.dpi: 140" | xrdb -merge
-gsettings set org.gnome.desktop.interface text-scaling-factor 1.5
-
-# start xwayland
-/usr/sbin/xwayland-satellite :11 &
-# scale 1.4 for xwayland
-sleep 0.5s && echo "Xft.dpi: 150" | xrdb -merge
+# echo "Xft.dpi: 140" | xrdb -merge
+# gsettings set org.gnome.desktop.interface text-scaling-factor 1.5
+#
+# # start xwayland
+# /usr/sbin/xwayland-satellite :11 &
+# # scale 1.4 for xwayland
+# sleep 0.5s && echo "Xft.dpi: 150" | xrdb -merge
 
 # Execs are also a thing BUT,
 # https://github.com/DreamMaoMao/mangowc/wiki#exec-setting
