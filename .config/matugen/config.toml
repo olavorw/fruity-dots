@@ -31,6 +31,10 @@ input_path = './templates/mango.conf'
 output_path = '~/.config/mango/colors/matugen.conf'
 post_hook = 'mmsg -d reload_config'
 
+[templates.hyprland]
+input_path = './templates/hyprland-colors.conf'
+output_path = '~/.config/hypr/colors/custom/matugen.conf'
+
 [templates.hyprlock]
 input_path = './templates/hyprlock.conf'
 output_path = '~/.config/hypr/hyprlock.conf'
