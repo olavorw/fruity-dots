@@ -4,6 +4,7 @@
 # 1. Hypr / Mango / Wayland / Window‑manager essentials
 # -------------------------------------------------------------
 PKGS+=(
+  xorg-xrdb
   kitty
   matugen
   mangowc-git
