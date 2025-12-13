@@ -1,4 +1,7 @@
 #!/bin/bash
-paru -S --needed clamav
+
+set -e
+
+paru -S --needed --noconfirm clamav
 
 sudo freshclam

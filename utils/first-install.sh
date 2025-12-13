@@ -1,70 +1,71 @@
 #!/bin/bash
 
-echo "Installing the basics"
+set -e
+
+echo "Installing the basics..."
 
 # Install AUR helper
-echo "Attempting to install yay in 1 second using install-yay.sh in the utils folder"
-sleep 1
+echo "Installing paru..."
 ./paru.sh
 
 # Install dependencies
-echo "Installing dependencies in 1 second"
-sleep 1
+echo "Installing dependencies..."
 ./install-dependencies.sh
 
 # Get the dotfiles copied over
-echo "Copying dotfiles over using updater.sh in the root directory of these dots"
+echo "Copying dotfiles..."
 ../updater.sh
 
-# Install hyprland plugins
-
+# Enable pcscd for smart cards
 sudo systemctl enable pcscd
 
-# font uwu
-echo "Installing fonts"
+# Fonts
+echo "Installing fonts..."
 ./install-sf-pro-fonts.sh
 
-# flatpak
-echo "Installing flatpaks"
+# Flatpak
+echo "Installing Flatpaks..."
 ./flatpak.sh
 
-# set up tailscale
-echo "USER ACTION REQUIRED: Set up tailscale!"
+# Tailscale
+echo "USER ACTION REQUIRED: Set up Tailscale!"
 ./tailscale.sh
 
-# neovim config clone
-echo "Cloning neovim config"
+# Neovim config
+echo "Cloning Neovim config..."
 ./neovim.sh
 
-# Install zsh plugins
-echo "Installing zsh plugins"
+# Zsh plugins
+echo "Installing Zsh plugins..."
 ./zsh.sh
 
-# omz
+# Oh My Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-# UFW FIrewallified
-echo "Activating firewall"
+# Firewall
+echo "Activating firewall..."
 ./ufw.sh
 
 # Papirus folders
-echo "Setting papirus folder colors"
+echo "Setting Papirus folder colors..."
 ./papirus.sh
 
 # SSH
-echo "Setting up SSH"
+echo "Setting up SSH..."
 ./ssh.sh
 
 # Bluetooth
-echo "bluetoothing"
+echo "Setting up Bluetooth..."
 ./bluetooth.sh
 
-echo "clamav"
+# ClamAV
+echo "Installing ClamAV..."
 ./clamav.sh
 
-echo "spto"
+# Spotify
+echo "Setting up Spotify..."
 ./spotify.sh &
 
 # Syncthing
-echo "syncing thing"
+echo "Setting up Syncthing..."
 ./syncthing.sh

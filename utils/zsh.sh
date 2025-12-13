@@ -4,13 +4,11 @@
 
 set -e
 
-ZSH_CUSTOM="${ZSH_CUSTOM:-/.oh-my-zsh/custom}"
-PLUGIN_DIR="$HOME/.zsh"
+ZSH_CUSTOM="${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}"
 
-# Create plugin directory
-mkdir -p "$PLUGIN_DIR"
+echo "Installing Zsh plugins..."
 
-echo "Plugins cloned to $PLUGIN_DIR"
+git clone https://github.com/zsh-users/zsh-autosuggestions "$ZSH_CUSTOM/plugins/zsh-autosuggestions"
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "$ZSH_CUSTOM/plugins/zsh-syntax-highlighting"
 
-git clone "https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions"
-git clone "https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting"
+echo "Zsh plugins installed"

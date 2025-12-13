@@ -1,21 +1,19 @@
 #!/bin/bash
 
-# paru best
-
-# Install yay AUR helper
+# Install paru AUR helper
 
 set -e
 
-# Check if yay is already installed
+# Check if paru is already installed
 if command -v paru &>/dev/null; then
-  echo "its is already installed"
+  echo "paru is already installed"
   exit 0
 fi
 
 # Install base-devel and git if not present
 sudo pacman -S --needed --noconfirm base-devel git
 
-# Clone yay repository
+# Clone paru repository
 cd /tmp
 git clone https://aur.archlinux.org/paru.git
 cd paru
@@ -27,4 +25,4 @@ makepkg -si --noconfirm
 cd ..
 rm -rf paru
 
-echo "yay installed successfully"
+echo "paru installed successfully"

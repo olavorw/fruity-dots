@@ -1,6 +1,8 @@
 #!/bin/bash
 
-echo "hyprland plugins"
+set -e
+
+echo "Installing Hyprland plugins..."
 
 hyprpm update
 

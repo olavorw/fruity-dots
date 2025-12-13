@@ -4,8 +4,8 @@
 
 set -e
 
-# Install UFW if not present
-if ! command -v nftables &>/dev/null; then
+# Install nftables if not present
+if ! command -v nft &>/dev/null; then
   echo "Installing nftables..."
   sudo pacman -S --needed --noconfirm nftables
 fi
@@ -28,7 +28,7 @@ table inet filter {
 }
 EOF
 
-# Enable UFW service to start on boot
+# Enable nftables service to start on boot
 echo "Enabling nftables service..."
 sudo systemctl enable nftables.service
 sudo systemctl start nftables.service

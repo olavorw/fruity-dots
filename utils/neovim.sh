@@ -1,12 +1,12 @@
 #!/bin/bash
 
-# bro
+set -e
 
 if ! command -v git &>/dev/null; then
-  echo "Installing gi"
+  echo "Installing git..."
   sudo pacman -S --needed --noconfirm git
 fi
 
-echo "cloning neovim config"
+echo "Cloning Neovim config..."
 git clone "https://github.com/olavorw/nvim.git" "$HOME/.config/nvim"
-echo "lazyvim installed"
+echo "Neovim config installed"
