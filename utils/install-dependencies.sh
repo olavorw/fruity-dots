@@ -51,6 +51,7 @@ PKGS+=(
 # 4. System & File utilities
 # -------------------------------------------------------------
 PKGS+=(
+  appimagelauncher
   syncthing                    # file sync tool (needs its own config)
   selectdefaultapplication-git # set default apps
 
