@@ -52,7 +52,6 @@
   "group/laptop_modules": {
     "orientation": "inherit",
     "modules": [
-      "backlight",
       "battery",
       "power-profiles-daemon",
     ]

@@ -4,6 +4,7 @@
     "$HOME/.config/waybar/modules/separators.jsonc",
     "$HOME/.config/waybar/modules/modules.jsonc",
     "$HOME/.config/waybar/modules/groups.jsonc",
+    "$HOME/.config/waybar/modules/mango.jsonc",
     "$HOME/.config/waybar/modules/custom-modules.jsonc"
   ],
   "layer": "top",

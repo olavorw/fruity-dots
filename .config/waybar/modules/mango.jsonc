@@ -4,6 +4,15 @@
     "hide-vacant": "true"
   },
   "dwl/window": {
-    "tooltip": false
+    "tooltip": false,
+    "max-length": 20,
+    "rewrite": {
+      "(.*) — Zen Browser": "Zen",
+      "~": "",
+      "olavorw@fra9er:~": "",
+      "kitty": "",
+      "zsh": "",
+      "(.*)nvim(.*)": ""
+    }
   }
 }
