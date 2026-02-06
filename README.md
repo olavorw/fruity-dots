@@ -10,7 +10,7 @@ This was forked from my [mat3rialized-dots]("https://github.com/olavorw/mat3rial
 
 1. Install required dependencies
 
-    `paru -S mangowc-git rofi matugen spicetify kvantum swaync waybar wlogout kitty hypridle fastfetch`
+    `yay -S mangowc-git rofi matugen spicetify kvantum swaync waybar wlogout kitty hypridle fastfetch`
 
 2. Copy over files you want from configs in this repository.
 

@@ -2,6 +2,6 @@
 
 set -e
 
-paru -S --needed --noconfirm clamav
+yay -S --needed --noconfirm clamav
 
 sudo freshclam

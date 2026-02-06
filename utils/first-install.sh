@@ -5,8 +5,8 @@ set -e
 echo "Installing the basics..."
 
 # Install AUR helper
-echo "Installing paru..."
-./paru.sh
+echo "Installing yay..."
+./install-yay.sh
 
 # Install dependencies
 echo "Installing dependencies..."

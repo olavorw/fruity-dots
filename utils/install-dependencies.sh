@@ -91,6 +91,9 @@ PKGS+=(
   mpv               # video player
   imv               # image viewer
   ffmpegthumbnailer # generate thumbnails for video files
+  tumbler
+  poppler-glib
+  libgsf
 
   gnome-clocks       # clock application
   gnome-disk-utility # disk utility
@@ -186,9 +189,9 @@ PKGS+=(
 # End of PKGS array
 # -------------------------------------------------------------
 
-if command -v paru &>/dev/null; then
-  paru -S --needed --noconfirm "${PKGS[@]}"
+if command -v yay &>/dev/null; then
+  yay -S --needed --noconfirm "${PKGS[@]}"
 else
-  echo "paru not found. Install yay first or remove AUR packages section."
+  echo "yay not found. Install yay first or remove AUR packages section."
   exit 1
 fi
