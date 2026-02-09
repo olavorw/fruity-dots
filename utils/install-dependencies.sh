@@ -137,8 +137,10 @@ PKGS+=(
   stow           # symlink manager
   swww           # wallpaper setter
   udiskie        # auto-mount removable media
-  tree           # directory tree viewer
-  wl-clipboard   # clipboard integration
+  # thunar-volman
+  gvfs
+  tree         # directory tree viewer
+  wl-clipboard # clipboard integration
   wl-clip-persist
   cliphist
 
