@@ -69,3 +69,7 @@ echo "Setting up Spotify..."
 # Syncthing
 echo "Setting up Syncthing..."
 ./syncthing.sh
+
+# Templates
+echo "Templates"
+./templates.sh
